@@ -1,5 +1,5 @@
-# TeslaData Widget
-A Scriptable widget to pull data from a given API, eg. TeslaFi, Teslalogger, Tronity to display a widget on your iPhone. 
+# TeslaData Widget for TeslaMate
+A Scriptable widget to pull data from a given API by TeslaMate and TeslaMateAPI to display a widget on your iPhone. 
 
 <img src="documentation/screen_001.png" width="400" /> &nbsp; <img src="documentation/screen_003.png" width="400" /> &nbsp; <img src="documentation/screen_001_med.png" width="400" />
 
@@ -29,11 +29,6 @@ A Scriptable widget to pull data from a given API, eg. TeslaFi, Teslalogger, Tro
 * Get a [map API key from MapQuest](https://developer.mapquest.com/) and add it to your paramters.js file.
 * Install any themes into the tesla_data folder, and modify the parameters.js file to include the theme you'd like to apply (e.g. custom_theme = "3d" will load the 3d.js theme from the themes directory).
 * Note: The widget parameter overrides the parameters.js. This is so you can have widgets for more than one car (or more than one data source).
-
-### TeslaFi API
-You obviously need a TeslaFi account (and a Tesla). Get your [API Key](https://teslafi.com/api.php).
-
-API url: `https://www.teslafi.com/feed.php?token=YOUR_API_KEY&command=lastGood&encode=1`
 
 ### Other API
 If you use other tools like [TeslaLogger](https://github.com/bassmaster187/TeslaLogger), [Tronity](https://tronity.io/home/5OiA7SfA), etc. you only have to provide [json file](documentation/sample.json) with the following data ([more details on the required fields](documentation/json_requirements.md)):
@@ -108,36 +103,5 @@ You can inject your own code without affecting the TeslaData codebase via themin
 
 ## Changelog
 
-- v1.7
-   - Add my own map API key so users don't have to try to get their own (although still recommended).
-   - Save a local copy of the map to reuse (to reduce calls to the mapping service).
-   - Added link to either Google Maps or Apple Maps when clicking on the map (opens the app and drops a pin where the car is).
-- v1.6
-   - Added Longitude/Latitude to data set
-   - Updated theming to support async processing (so themes can pull data from external URLs)
-   - Updated default theme to support medium
-   - Added themeDebugArea as a place for theme development (bottom of the code)
-   - Added map to medium sized widget if the data supports it
-- v1.5 
-   - Complete rewrite of the code for cleanliness.
-   - Many fields are no longer required (but still preferred)
-   - Added code to store a copy of the last data, so the widget doesn't error when the device doesn't have network
-   - Added support for themes (and moved 3d bars into a theme)
-   - Added support for external configuration file
-- v1.0 
-   - Use apiurl parameter instead apikey (now supports any JSON source)
-   - Renamed to TeslaData widget.
-   - Fixed issue where disance value wasn't correct for metric.
-- v0.8 
-   - Added color coded snowflake to show if we're heating or cooling.
-   - Added target temperature to display when preheating/cooling.
-   - Added charging icon to show when the charger is connected (but not currently charging).
-   - Added metric range display (untested).
-   - Added internal temperature showing faded when the data is more than 2 hours old (since the internal temp is probably invalid).
-   - Added usable vs. total charge (for colder weather).
-- v0.7 
-   - Added custom bolt icon for charging so I could add a stroke, changed charging color.
-   - Adjusted 3D styling
-   - Added time since last communication with the car.  
-- v0.6 
+- v0.1 
    - Initial release added to GitHub  
