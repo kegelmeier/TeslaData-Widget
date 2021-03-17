@@ -4,9 +4,6 @@ A Scriptable widget to pull data from a given API by TeslaMate and TeslaMateAPI 
 <img src="documentation/screen_001.png" width="400" /> &nbsp; <img src="documentation/screen_003.png" width="400" /> &nbsp; <img src="documentation/screen_001_med.png" width="400" />
 
 ## Usage
-### Install with Scriptdude
-
-[<img src="https://scriptdu.de/download.svg" width="120" />](https://scriptdu.de/?name=TeslaData&source=https://raw.githubusercontent.com/DrieStone/TeslaData-Widget/main/TeslaData%20Widget.js&docs=https://github.com/DrieStone/TeslaData-Widget#generator)
 
 ### Manual Install
 
